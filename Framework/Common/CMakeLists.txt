@@ -1,5 +1,2 @@
-add_library(
-Common
-BaseApplication.cpp
-main.cpp
-)
+aux_source_directory(. DIR_LIB_SRCS)
+add_library(Common ${DIR_LIB_SRCS})
