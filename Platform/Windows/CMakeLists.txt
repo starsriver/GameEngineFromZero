@@ -1,0 +1,2 @@
+add_executable(HelloEngine_Win WIN32 helloengine_win.c)
+target_link_libraries(HelloEngine_Win user32.lib)
