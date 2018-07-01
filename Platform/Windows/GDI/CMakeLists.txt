@@ -1,0 +1,2 @@
+add_executable(HelloEngine_Win_GDI WIN32 helloengine_win_gdi.cpp)
+target_link_libraries(HelloEngine_Win_GDI user32.lib gdi32.lib)
