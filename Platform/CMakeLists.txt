@@ -1,1 +1,7 @@
-add_subdirectory(Windows)
+IF (CMAKE_HOST_SYSTEM_NAME MATCHES "Linux")  
+    add_subdirectory(Linux)
+ELSEIF (CMAKE_HOST_SYSTEM_NAME MATCHES "Windows")  
+    add_subdirectory(Windows) 
+ELSE ()  
+    MESSAGE(STATUS "other platform: ${CMAKE_HOST_SYSTEM_NAME}")
+ENDIF (CMAKE_HOST_SYSTEM_NAME MATCHES "Linux") 
